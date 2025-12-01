@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    # Set the path where the app should be deployed (e.g., public_html)
+    - export DEPLOYPATH=/home/mannatem/cms.mannatemple.co.za/
+
+    # Copy files/folders from the Git repo root to the deployment path
+    - /bin/cp -R * $DEPLOYPATH
